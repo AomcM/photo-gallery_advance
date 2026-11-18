@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Accessible Photo Gallery</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/script.js"></script>
+</head>
+<body onload="addTabFocus()">
+
+	<h1>My Photo Gallery</h1>
+
+	<div id="image" aria-live="polite">
+		Hover over or focus on an image below to display here.
+	</div>
+
+		<img class="preview" alt="Black puppy sitting on a wooden floor" src="https://picsum.photos/id/237/800/600"
+		onmouseover="upDate(this)" onmouseout="unDo()"
+		onfocus="upDate(this)" onblur="unDo()">
+
+	<img class="preview" alt="Pug wrapped in a blanket" src="https://picsum.photos/id/1025/800/600"
+		onmouseover="upDate(this)" onmouseout="unDo()"
+		onfocus="upDate(this)" onblur="unDo()">
+
+	<img class="preview" alt="River winding through a green valley" src="https://picsum.photos/id/1015/800/600"
+		onmouseover="upDate(this)" onmouseout="unDo()"
+		onfocus="upDate(this)" onblur="unDo()">
+
+	<img class="preview" alt="Mountain landscape under a cloudy sky" src="https://picsum.photos/id/1018/800/600"
+		onmouseover="upDate(this)" onmouseout="unDo()"
+		onfocus="upDate(this)" onblur="unDo()">
+
+	<img class="preview" alt="Forest path surrounded by tall trees" src="https://picsum.photos/id/10/800/600"
+		onmouseover="upDate(this)" onmouseout="unDo()"
+		onfocus="upDate(this)" onblur="unDo()">
+
+	<img class="preview" alt="Lion resting in dry grass" src="https://picsum.photos/id/1074/800/600"
+		onmouseover="upDate(this)" onmouseout="unDo()"
+		onfocus="upDate(this)" onblur="unDo()">
+
+</body>
+</html>
